@@ -1,0 +1,56 @@
+body {
+  font-size: 18px;
+  font-family: "consolas";
+  text-align: center;
+  color: white;
+  background: deepskyblue;
+}
+
+th {
+  background-color: coral;
+}
+
+td {
+  background: lawngreen;
+  color: black
+}
+
+a:link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:visited {
+  text-decoration: none;
+    color: blueviolet;
+}
+
+a:hover {
+    color: blueviolet;
+    background-color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.middle {
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  width: 40%;
+}
+
+.footer {
+  position: fixed;
+  top: 75%;
+  left: 45%;
+}
+
+.ftext {
+  position: fixed;
+  left: 30%;
+  width: 40%;
+}

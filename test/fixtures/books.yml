@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purchased: 2015-08-06
+  accession: 1
+  author: MyString
+  title: MyString
+  volume: 1
+  publisher: MyString
+  year: 1
+  pages: 1
+  source: MyString
+  class_number: 1
+  book_number: MyString
+  cost: 1
+  bill_number: 1
+  withdrawn: 2015-08-06
+  remarks: MyText
+  genre_id: 1
+
+two:
+  purchased: 2015-08-06
+  accession: 1
+  author: MyString
+  title: MyString
+  volume: 1
+  publisher: MyString
+  year: 1
+  pages: 1
+  source: MyString
+  class_number: 1
+  book_number: MyString
+  cost: 1
+  bill_number: 1
+  withdrawn: 2015-08-06
+  remarks: MyText
+  genre_id: 1

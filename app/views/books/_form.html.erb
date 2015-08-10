@@ -1,0 +1,82 @@
+<%= form_for(@book) do |f| %>
+  <% if @book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :purchased %><br>
+    <%= f.date_select :purchased %>
+  </div>
+  <div class="field">
+    <%= f.label :accession %><br>
+    <%= f.number_field :accession %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :volume %><br>
+    <%= f.number_field :volume %>
+  </div>
+  <div class="field">
+    <%= f.label :publisher %><br>
+    <%= f.text_field :publisher %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.select :year, [*1900...2100] %>
+  </div>
+  <div class="field">
+    <%= f.label :pages %><br>
+    <%= f.number_field :pages %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </div>
+  <div class="field">
+    <%= f.label :class_number %><br>
+    <%= f.number_field :class_number %>
+  </div>
+  <div class="field">
+    <%= f.label :book_number %><br>
+    <%= f.text_field :book_number %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.number_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :bill_number %><br>
+    <%= f.number_field :bill_number %>
+  </div>
+  <div class="field">
+    <%= f.label :withdrawn %><br>
+    <%= f.date_select :withdrawn %>
+  </div>
+  <div class="field">
+    <%= f.label :remarks %><br>
+    <%= f.select :remarks, ['None','Weedout','Out of Use'] %>
+  </div>
+  <div class="field">
+    <%= f.label :genre_id %><br>
+    <%= collection_select :book, :genre_id, Genre.all, :id, :title, prompt: true %>
+    <%= link_to 'Manage Genres', controller: 'genres' %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

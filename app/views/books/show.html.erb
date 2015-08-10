@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Purchased:</strong>
+  <%= @book.purchased %>
+</p>
+
+<p>
+  <strong>Accession:</strong>
+  <%= @book.accession %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book.author %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @book.volume %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @book.publisher %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @book.year %>
+</p>
+
+<p>
+  <strong>Pages:</strong>
+  <%= @book.pages %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @book.source %>
+</p>
+
+<p>
+  <strong>Class Number:</strong>
+  <%= @book.class_number %>
+</p>
+
+<p>
+  <strong>Book Number:</strong>
+  <%= @book.book_number %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @book.cost %>
+</p>
+
+<p>
+  <strong>Bill Number:</strong>
+  <%= @book.bill_number %>
+</p>
+
+<p>
+  <strong>Withdrawn:</strong>
+  <%= @book.withdrawn %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @book.remarks %>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @book.genre.title %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
